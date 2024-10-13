@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset CSS */
+        body {
+            color: white;
+            /* Rest CSS */
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg') no-repeat;
+            background-size: 100% 110%;
+
+            .left {
+                /* border: 2px solid red; */
+                display: inline-block;
+                position: absolute;
+                left: 34px;
+                top: 13px;
+            }
+
+            .left img {
+
+                width: 80px;
+                background-color: black;
+            }
+
+            .mid {
+                display: block;
+                width: 33%;
+                margin: 20px auto;
+                /* border: 2px solid orange; */
+            }
+
+            .right {
+                position: absolute;
+                right: 34px;
+                top: 35px;
+                display: inline-block;
+                /* border: 2px solid blue; */
+            }
+
+            .btn {
+                width: auto;
+                margin: 0px 10px;
+                padding: 4px 14px;
+                border: 2px solid black;
+                background-color: rgb(107, 107, 107);
+                font-weight: 100;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar li a:hover,.navbar li a.active {
+            cursor: pointer;
+            color: chocolate
+        }
+    
+        .container {
+            color: rgb(146, 146, 146);
+            /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+            text-align: center;
+            border: 2px solid rgb(81, 88, 88);
+            border-radius: 15px;
+            margin: 40px 33px;
+            padding: 20px;
+            width: 33%;
+        }
+        .form-gro input{
+            display: block;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid rgb(82, 82, 82);
+            border-radius: 10px;
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <!-- logo -->
+        <div class="left">
+            <img src="logo4.png" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <!-- For Nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li><a href="fitness.html" target="_blank">Fitness Hub</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- For Buttons -->
+        <div class="right">
+            <button class="btn">E-Mail Now</button>
+            <button class="btn">Call Now</button>
+        </div>
+
+    </head>
+    <div class="container">
+        <h2>Welcome To Your Fitness</h2>
+    
+    <form action="noaction.php">
+    <div class="form-gro">
+        <input type="text" placeholder="First Name">
+    </div>
+    <div class="form-gro">
+        <input type="text" placeholder="Last Name">
+    </div>
+    <div class="form-gro">
+        <input type="number" placeholder="Your Gender">
+    </div>
+    <div class="form-gro">
+        <input type="text" placeholder="Your Age">
+    </div>
+    <div class="form-gro">
+        <input type="text" placeholder="Mobile Number">
+    </div>
+    <button class="btn">Submitt</button>
+    </form>
+</div>
+</body>
+
+</html>
